@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.playwright-cli/
+*.log
+public/model.html
+public/MODEL.md
+public/preview.png
+public/demo.mp4

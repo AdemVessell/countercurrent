@@ -1,0 +1,28 @@
+Final candidate check: npm run check
+CPU suite: 9 tests, 9 pass, 0 fail, duration 320.213458 ms.
+The complete suite ran before the build shown below. Exit code: 0.
+
+vite v8.1.4 building client environment for production...
+[2Ktransforming...✓ 14 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   5.90 kB │ gzip:   2.55 kB
+dist/assets/index-DeEsI_jS.css    8.35 kB │ gzip:   2.73 kB
+dist/assets/index-BTNvFsGR.js   881.86 kB │ gzip: 244.75 kB
+
+✓ built in 219ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+> countercurrent@0.1.0 audit:runtime
+> node scripts/audit-runtime.mjs
+
+{
+  "pass": true,
+  "runtimeSourceFiles": 8,
+  "problems": [],
+  "scope": "Static first-party runtime source, required delivery files and entry asset references. Browser offline exercise is separate."
+}
