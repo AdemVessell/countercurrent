@@ -1,0 +1,19 @@
+{
+  "name": "countercurrent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive reciprocal water-and-float experiment from ARSENAL.",
+  "engines": { "node": "^20.19.0 || >=22.12.0" },
+  "scripts": {
+    "dev": "node scripts/build-model.mjs && vite --host 127.0.0.1 --port 5188 --strictPort",
+    "build": "node scripts/build-model.mjs && vite build --base=./",
+    "preview": "vite preview --host 127.0.0.1 --port 4188 --strictPort",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node --test tests/*.test.mjs",
+    "audit:runtime": "node scripts/audit-runtime.mjs",
+    "check": "npm test && npm run build && npm run audit:runtime"
+  },
+  "dependencies": { "three": "0.185.1" },
+  "devDependencies": { "vite": "8.1.4" }
+}

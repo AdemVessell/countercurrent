@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-09-06T07:04:41.774918+00:00",
+  "revisionReason": "Stevenson correctly identified about 13 seconds of idle opening in the previous 38-second clip. Earlier codec and representative-frame checks missed the pacing defect.",
+  "video": {
+    "path": "docs/assets/countercurrent-demo-v2.mp4",
+    "sha256": "efd7c84f8664fc6bd62481deb3d5aeed70b1e91c4366bd2c135f8f4663e11820",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1440,
+          "height": 1000,
+          "avg_frame_rate": "25/1",
+          "nb_frames": "450"
+        }
+      ],
+      "format": {
+        "duration": "18.000000",
+        "size": "2094750"
+      }
+    }
+  },
+  "capture": {
+    "path": "output/playwright/countercurrent-retake.webm",
+    "sha256": "efffb982e8b0fdb97cadebc75f76d4973ca02ff09dd5e4f97f76414e467cdde6",
+    "durationSeconds": 35.56,
+    "retention": "Full WebM retained locally; not included in the curated source archive."
+  },
+  "edit": {
+    "startSeconds": 7,
+    "endSeconds": 25,
+    "contiguous": true,
+    "speedFactor": 1,
+    "audio": false,
+    "compositing": false
+  },
+  "interaction": "Actual browser controls and pointer input: press, guide the float along a curve, release, press again, reset. Projection helper only locates screen coordinates; motion is produced by the live app.",
+  "browserDuringInteraction": {
+    "elapsedMilliseconds": 13108.80000001192,
+    "renderedFrames": 1574,
+    "ready": true,
+    "paused": false,
+    "coupled": true,
+    "droppedWallSeconds": 0,
+    "hiddenPauses": 0
+  },
+  "decodedFrameCheck": {
+    "decodeErrors": 0,
+    "sampleRateHz": 10,
+    "cropPixels": [
+      340,
+      260,
+      950,
+      600
+    ],
+    "scaledSize": [
+      95,
+      60
+    ],
+    "metric": "Mean absolute 8-bit grayscale difference between adjacent samples, averaged per second; a descriptive motion check, not a physical-validation metric.",
+    "perSecondMeanDifference": [
+      0.803193,
+      1.260456,
+      1.417298,
+      1.44793,
+      1.440316,
+      1.384211,
+      1.346263,
+      1.263421,
+      1.301667,
+      1.558561,
+      0.432281,
+      0.615228,
+      1.280842,
+      1.219263,
+      1.176526,
+      1.102298,
+      1.076053,
+      0.986569
+    ]
+  },
+  "visualCheck": "Inspected full-capture contact sheet and opening 0-1.75 seconds at quarter-second intervals. Reflections and wave pattern visibly change from the first interval; no idle opening remains.",
+  "scope": "Recording repair only. Application, solver and deployment payload unchanged. Visual acceptance and publication remain pending."
+}

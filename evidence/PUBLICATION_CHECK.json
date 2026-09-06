@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-09-06T11:58:16.024Z",
+  "scope": "Local final publication build. Public deployment and CI results are recorded in the release receipt; this record itself does not claim publication.",
+  "changes": "Source/evidence links, sharing metadata, unsupported-browser recording link, reproducible media copies in build, public CI, and documentation scrub. Solver and rendering JavaScript unchanged.",
+  "cpuTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "productionBuild": true,
+  "runtimeAudit": true,
+  "bundle": "index-BTNvFsGR.js",
+  "browser": {
+    "gpuQuick": {
+      "pass": true,
+      "cases": [
+        {
+          "name": "float-to-water",
+          "pass": true,
+          "steps": 240,
+          "n": 24,
+          "dt": 0.004166666666666667,
+          "heightError": 1.1934434725191512e-8,
+          "velocityError": 5.8331901160030286e-8,
+          "bodyError": 1.4134806257393162e-7,
+          "tolerance": 0.00005,
+          "diagnostics": {
+            "steps": 240,
+            "time": 1,
+            "z": -0.010250302962958813,
+            "speed": 0.10566529631614685,
+            "meanHeight": -0.010241128367238412,
+            "q": -0.000009174595720400774,
+            "volume": 7.963220537104181e-10,
+            "maxHeight": 0.01636071316897869,
+            "finite": true,
+            "waterKinetic": 2.4120831803355838,
+            "waterPotential": 2.4974939944957097,
+            "bodyKinetic": 0.15631216783810764,
+            "couplingPotential": 7.575588596951658e-8,
+            "energy": 5.065889418425287,
+            "modifiedEnergy": 5.066712063721994
+          }
+        },
+        {
+          "name": "incoming-wave",
+          "pass": true,
+          "steps": 240,
+          "n": 24,
+          "dt": 0.004166666666666667,
+          "heightError": 6.135898351911084e-9,
+          "velocityError": 3.0452558967553056e-8,
+          "bodyError": 3.946329144325841e-9,
+          "tolerance": 0.00005,
+          "diagnostics": {
+            "steps": 240,
+            "time": 1,
+            "z": -0.0012855587992817163,
+            "speed": -0.0011010493617504835,
+            "meanHeight": -0.001171937309156794,
+            "q": -0.00011362149012492237,
+            "volume": 2.346070004932699e-9,
+            "maxHeight": 0.004281611181795597,
+            "finite": true,
+            "waterKinetic": 5.549659391656207,
+            "waterPotential": 0.8292236381804895,
+            "bodyKinetic": 0.00001697233575815606,
+            "couplingPotential": 0.000011618858716387048,
+            "energy": 6.378911621031171,
+            "modifiedEnergy": 6.361643257508626
+          }
+        },
+        {
+          "name": "coupling-off",
+          "pass": true,
+          "steps": 240,
+          "n": 24,
+          "dt": 0.004166666666666667,
+          "heightError": 0,
+          "velocityError": 0,
+          "bodyError": 2.980232241545089e-9,
+          "tolerance": 0.00005,
+          "diagnostics": {
+            "steps": 240,
+            "time": 1,
+            "z": -0.07500000298023224,
+            "speed": 0,
+            "meanHeight": 0,
+            "q": -0.07500000298023224,
+            "volume": 0,
+            "maxHeight": 0,
+            "finite": true,
+            "waterKinetic": 0,
+            "waterPotential": 0,
+            "bodyKinetic": 0,
+            "couplingPotential": 0,
+            "energy": 0,
+            "modifiedEnergy": 0
+          }
+        }
+      ],
+      "backend": "WebGPU",
+      "feedback": 1,
+      "precision": "fp32 GPU vs float64 CPU; absolute component tolerance",
+      "checkedAt": "2026-09-06T11:58:16.024Z"
+    },
+    "afterPress": {
+      "steps": 395,
+      "time": 1.6458333333333333,
+      "z": -0.0024629433173686266,
+      "speed": -0.1300828903913498,
+      "meanHeight": 0.002867057361650524,
+      "q": -0.0053300006790191505,
+      "volume": -2.398105855359552e-10,
+      "maxHeight": 0.005764304660260677,
+      "finite": true,
+      "waterKinetic": 0.9340084284184212,
+      "waterPotential": 0.9013919479596817,
+      "bodyKinetic": 0.23690181721595094,
+      "couplingPotential": 0.025568016514510145,
+      "energy": 2.097870210108564,
+      "modifiedEnergy": 2.096517742105262
+    },
+    "ready": true,
+    "sourceLink": "Source, tests and recorded evidence ↗",
+    "shareImage": "https://www.xn--arkh-eva.org/countercurrent/preview.png"
+  }
+}
