@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-09-06T12:00:31.354911+00:00",
+  "createdAt": "2026-09-06T14:56:54.109424+00:00",
   "version": "0.1.0",
   "scope": "Curated standalone public release. Manifest excludes itself. No private workshop files, raw capture directory, build output or installed dependencies. Byte hashes identify content, not authorship or physical validity.",
   "files": [
@@ -40,13 +40,13 @@
     },
     {
       "path": "PROOF.md",
-      "bytes": 6327,
-      "sha256": "5b9fbf541ddd51a25989e1e9ee8385eb389334829cbca1127f52c796cef53a02"
+      "bytes": 6321,
+      "sha256": "6ddc5073cb67c48e85187790ecaf8e266bb87b6a579979df685d93becced7fb9"
     },
     {
       "path": "README.md",
-      "bytes": 5567,
-      "sha256": "992434d570457b4c9cb192931bb33616e16ae5669707ad6d496c660d2ba01796"
+      "bytes": 5380,
+      "sha256": "01e2e95464d403489349401dd98fc8a26a80d003564438be3841c624ef890c72"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -110,8 +110,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 6724,
-      "sha256": "ab8edab4290b5eaf30dcce58108cdbf1b53ef9be0eaaa57f34494280c4edc848"
+      "bytes": 6531,
+      "sha256": "7caa5e7d93f9229d8d33a7e6e4f0e91aa0ad18315a453d004f505a044ea76b56"
     },
     {
       "path": "interface.md",
@@ -178,5 +178,6 @@
       "bytes": 4875,
       "sha256": "18ebf2743aeba1ddd8554bc443dec4e41be64283200ce2ff4bd674ae313fcbc2"
     }
-  ]
+  ],
+  "revision": "Copy refresh on main; the v0.1.0 tag and release archive remain unchanged."
 }

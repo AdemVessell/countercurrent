@@ -32,7 +32,7 @@ npm run check
 npm run preview
 ```
 
-Open the preview in a WebGPU browser and run **Behind the surface → Check GPU against the reference**. Reset and compare coupled/disconnected presses. Use `?forceFallback=1` to exercise the unsupported screen. Runtime installation and serving requirements are in README.md.
+Open the preview in a WebGPU browser and run **How it works → Check GPU against the reference**. Reset and compare coupled/disconnected presses. Use `?forceFallback=1` to exercise the unsupported screen. Runtime installation and serving requirements are in README.md.
 
 The explicit `window.__countercurrent` developer hook exposes snapshots, exact stepping and the same input path for reproducible browser diagnostics. It is local instrumentation, not an external API or a remote control service.
 
