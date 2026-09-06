@@ -1,16 +1,16 @@
 # Countercurrent
 
-An ARSENAL water-and-float study by Arkhē, built with Astra in Codex.
+An interactive water experiment from ARSENAL, built with Astra in Codex.
 
 [Open the live experiment](https://www.xn--arkh-eva.org/countercurrent/) · [Model](MODEL.md) · [Evidence](PROOF.md) · [ARSENAL releases](https://www.xn--arkh-eva.org/open-source#countercurrent)
 
-Press the ivory float, guide it across the basin, and release it. Its vertical motion puts pressure into a live shallow-water field. That same field changes the float's force. Open **Behind the surface** to inspect the fields, read the model, or run a CPU/GPU comparison on your device.
+Push the float and let go. It sends ripples across the basin, and those ripples push back. Open **How it works** to see the wave field, read the model, or compare the GPU simulation with its CPU reference in your browser.
 
 ![Countercurrent, an interactive stone basin with a reciprocal float](docs/assets/countercurrent.png)
 
 [Watch the 18-second demo](docs/assets/countercurrent-demo-v2.mp4) · [Earlier uncut validation recording](docs/assets/countercurrent-uncut.mp4)
 
-This is a separate ARSENAL study following [The Cove and cloth-v1 first drop](https://github.com/AdemVessell/arsenal-first-drop), with new reference code, GPU compute, interaction and presentation. Its contribution is an inspectable reciprocal coupling with reproducible checks: potential derivatives, numerical invariants, CPU/GPU correspondence and deliberate implementation failures. It is a bounded heave model, not a calibrated floating hull or general fluid simulator. See [MODEL.md](MODEL.md) and [PROOF.md](PROOF.md).
+Use it to explore how two simulations affect each other. The code comes with controls, model notes and tests, so you or your coding agent can make changes and check what still works. It follows [The Cove and cloth-v1](https://github.com/AdemVessell/arsenal-first-drop) as a separate ARSENAL project. [MODEL.md](MODEL.md) explains the physics and approximations; [PROOF.md](PROOF.md) records what was tested.
 
 ## Run
 
@@ -49,7 +49,7 @@ The hand and horizontal guide are external work. The heave coordinate is an incr
 
 ## Evidence and contribution
 
-GitHub Actions runs the nine CPU test groups, production build and runtime audit. GPU correspondence is a separate browser check: run it from **Behind the surface**. Published results identify the tested grid sizes, tolerances and limits.
+GitHub Actions runs the nine CPU test groups, production build and runtime audit. GPU correspondence is a separate browser check: run it from **How it works**. Published results identify the tested grid sizes, tolerances and limits.
 
 [PROOF.md](PROOF.md) maps each claim to a runnable check and its limits. [evidence/DEVELOPMENT.md](evidence/DEVELOPMENT.md) retains the initial test blind spot and rendering defect. [interface.md](interface.md) records field ownership and units. [ASSETS.md](ASSETS.md) records dependency and visual provenance. The short demo is a contiguous 18-second excerpt (7–25 s) from a fresh 35.56-second browser recording, with visible water motion from the start, guided dragging, release and reset. It replaces an earlier clip with a long idle opening. [evidence/MEDIA_CHECK.json](evidence/MEDIA_CHECK.json) records the capture and frame checks. The earlier 109.6-second validation recording is also retained. Neither recording contains generated or composited simulation footage.
 

@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#eeeae2" />
-  <meta name="description" content="An ARSENAL water-and-float study built with Astra in Codex. Reciprocal coupling, runnable CPU/GPU checks, and explicit model limits." />
+  <meta name="description" content="Push the float. Make some waves. An interactive water experiment from ARSENAL, with the code, model and tests included." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Countercurrent — an ARSENAL study" />
-  <meta property="og:description" content="Move the float. Inspect the model. Run the checks. A bounded WebGPU coupling experiment by Arkhē, built with Astra in Codex." />
+  <meta property="og:title" content="Countercurrent — water you can play with" />
+  <meta property="og:description" content="Push the float and watch the water push back. Built with Astra in Codex. Explore the simulation, get the code, and build on it." />
   <meta property="og:url" content="https://www.xn--arkh-eva.org/countercurrent/" />
   <meta property="og:image" content="https://www.xn--arkh-eva.org/countercurrent/preview.png" />
   <meta property="og:image:alt" content="An ivory float in Countercurrent's pale stone water basin" />
@@ -18,10 +18,10 @@
 <body>
   <a class="skip" href="#controls">Skip to controls</a>
   <div id="stage" aria-label="Interactive water basin. Drag inside the basin to guide and press the float." role="img"></div>
-  <header class="masthead"><a class="wordmark" href="https://www.xn--arkh-eva.org/" aria-label="Arkhē home">ARKHĒ<span>COMPUTATIONAL STUDIES</span></a><button class="text-button" id="open-inspector">Behind the surface <span aria-hidden="true">↗</span></button></header>
+  <header class="masthead"><a class="wordmark" href="https://www.xn--arkh-eva.org/" aria-label="Arkhē home">ARKHĒ<span>ARSENAL · BROWSER PHYSICS</span></a><button class="text-button" id="open-inspector">How it works <span aria-hidden="true">↗</span></button></header>
   <main>
     <section class="intro" aria-labelledby="title">
-      <p class="eyebrow"><span class="number">01</span> A STUDY IN RECIPROCITY</p>
+      <p class="eyebrow"><span class="number">01</span> WATER + FLOAT</p>
       <h1 id="title">Counter<span>current.</span></h1>
       <p class="dek">You move the float.<br>The water moves it back.</p>
       <div class="fine-rule"></div>
@@ -41,18 +41,18 @@
     <div id="loading" role="status"><span class="loader-ring"></span><span>Filling the basin</span></div>
   </main>
   <dialog id="inspector" aria-labelledby="inspector-title">
-    <div class="inspector-top"><span class="eyebrow">COUNTERCURRENT / FIELD NOTES</span><button class="icon-button" id="close-inspector" aria-label="Close field notes">×</button></div>
-    <h2 id="inspector-title">The same water.<br>Both directions.</h2>
-    <p class="inspector-lead">The float’s vertical displacement applies pressure to the water. That water’s changing height feeds back into the float’s force. For a comparison, turn the connection off, reset, then press. Existing waves continue after disconnection.</p>
+    <div class="inspector-top"><span class="eyebrow">COUNTERCURRENT / HOW IT WORKS</span><button class="icon-button" id="close-inspector" aria-label="Close field notes">×</button></div>
+    <h2 id="inspector-title">Make a wave.<br>Watch it come back.</h2>
+    <p class="inspector-lead">Push the float down and it moves the water. The changing water height then pushes back on the float. Try switching the connection off, resetting, and pressing again. Reset clears any waves already moving.</p>
     <div class="equation"><span>FLOAT</span><span class="equation-arrow">⇄</span><span>WATER</span><small>One shared coupling energy · two reciprocal forces</small></div>
     <h3>Look inside</h3>
     <div class="view-choices"><button data-view="surface" class="selected" aria-pressed="true" disabled>Surface</button><button data-view="height" aria-pressed="false" disabled>Height field</button><button data-view="flow" aria-pressed="false" disabled>Flow field</button><button id="top-view" disabled>Top view</button></div>
     <p class="body-copy">Height: blue −5 mm → pale zero → rust +5 mm. Colors saturate beyond that range; measurements do not. Flow: red is east/west speed, green is north/south speed (absolute components).</p>
     <dl class="readings"><div><dt>Float heave</dt><dd id="read-heave">—</dd></div><div><dt>Wave amplitude</dt><dd id="read-wave">—</dd></div><div><dt>Simulated time</dt><dd id="read-time">—</dd></div><div><dt>State</dt><dd id="read-state">Starting</dd></div></dl>
     <button class="verify-button" id="verify" disabled>Check GPU against the reference <span>↗</span></button><p id="verify-status" role="status">Runs three small cases on this device. A result is measured when you press the button.</p>
-    <h3>A bounded model</h3><p class="body-copy">One vertical float coordinate is coupled to linear shallow-water waves in a closed basin. Horizontal dragging is an externally driven guide. This is an energy-derived interaction model, not a calibrated hull simulation, breaking water or a three-dimensional fluid.</p>
-    <p class="body-copy">The undamped numerical scheme preserves a modified energy. Ordinary energy has timestep error. Damping and your hand add or remove energy. Optical slopes are amplified ×3 for legibility; geometry and measurements keep their original scale. Surface optics are illustrative.</p>
-    <div class="inspector-credit">An ARSENAL experiment by Arkhē.<br>Built with Astra in Codex. Mathematical review assisted by a separate model.<br><a href="./model.html">Model and method sources ↗</a><br><a href="https://github.com/AdemVessell/countercurrent">Source, tests and recorded evidence ↗</a><br><a href="https://www.xn--arkh-eva.org/open-source#countercurrent">More ARSENAL releases ↗</a></div>
+    <h3>What’s simulated</h3><p class="body-copy">The float moves up and down while a shallow-water model carries the waves. Your drag guides it across the basin. Splashing, breaking waves and full hull motion are outside this model.</p>
+    <p class="body-copy">Damping settles the water; your hand adds energy. The lighting exaggerates surface slopes ×3 so small ripples are easier to see. The geometry and measurements keep their original scale. The model notes explain the equations, numerical checks and approximations.</p>
+    <div class="inspector-credit">Made by Arkhē with Astra in Codex.<br>Take a look inside, then try changing something.<br><a href="./model.html">Read the model ↗</a><br><a href="https://github.com/AdemVessell/countercurrent">Get the code and tests ↗</a><br><a href="https://www.xn--arkh-eva.org/open-source#countercurrent">Explore ARSENAL ↗</a></div>
   </dialog>
   <script type="module" src="/src/main.js"></script>
 </body>
