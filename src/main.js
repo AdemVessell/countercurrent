@@ -11,6 +11,7 @@ $('close-inspector').onclick=()=>dialog.close();
 dialog.addEventListener('click',e=>{if(e.target===dialog&&e.clientX<dialog.getBoundingClientRect().left)dialog.close();});
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const query=new URLSearchParams(location.search);
+document.documentElement.classList.toggle('embedded',query.has('embed'));
 const runtime={ready:false,paused:false,coupled:true,verifying:false,top:false,mode:'surface',steps:0,frames:0,droppedWallSeconds:0,hiddenPauses:0,interactions:0,lastVerification:null,lastDiagnostics:null,fps:0};
 window.__countercurrent={runtime};
 

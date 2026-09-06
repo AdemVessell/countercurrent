@@ -115,14 +115,17 @@ export function makeScene(renderer,sim){
   key.shadow.bias=-.0004;key.shadow.normalBias=.025;scene.add(key);
   const fill=new THREE.DirectionalLight('#edf3f0',.6);fill.position.set(5,4,-5);scene.add(fill);
   const target=new THREE.Vector3(-.7,-.08,0);
+  const embedded=new URLSearchParams(location.search).has('embed');
   const setCamera=top=>{
     const mobile=innerWidth<600;
     if(top){camera.position.set(0,13,.01);camera.lookAt(0,0,0);}
     else{
       camera.position.set(mobile?8.1:8.5,mobile?10:9.2,mobile?11:11.2);
-      camera.lookAt(mobile?new THREE.Vector3(0,1.8,0):target);
+      camera.lookAt(embedded?new THREE.Vector3(0,-.08,0):mobile?new THREE.Vector3(0,1.8,0):target);
     }
-    camera.fov=mobile?64:34;camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();
+    camera.aspect=innerWidth/innerHeight;
+    camera.fov=embedded?Math.max(34,2*Math.atan(Math.tan(34*Math.PI/360)/camera.aspect)*180/Math.PI):mobile?64:34;
+    camera.updateProjectionMatrix();
   };
   setCamera(false);
   return {scene,camera,floatGroup,pointerRing,view,setCamera,target,waterMesh};

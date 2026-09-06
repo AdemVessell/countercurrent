@@ -8,3 +8,9 @@
 @media(max-width:900px){.intro{top:16%;left:5%;width:240px}h1{font-size:74px}.masthead{top:23px}.wordmark span{display:none}.scene-note{left:60%;bottom:126px}.intro .fine-rule,.intro .instruction{display:none}}
 @media(max-width:600px){.masthead{top:19px;left:6%;right:6%}.wordmark{font-size:21px}.text-button{font-size:9px}.intro{top:94px;left:7%;width:280px}.eyebrow{font-size:8px}h1{font-size:62px;line-height:.89;margin:17px 0 12px}h1 span{display:inline}h1 span:before{content:'\A';white-space:pre}.dek{font-size:11px;line-height:1.5;margin:0}.scene-note{left:50%;bottom:126px;font-size:7px}.footer-note{bottom:21px;left:6%;right:6%;font-size:7px}.intro{pointer-events:none}.fallback-inner{margin-top:24vh}.fallback-inner h2{font-size:42px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.loader-ring{animation:none}#loading{transition:none}}
+.embedded .intro,.embedded .wordmark,.embedded .footer-note{display:none}
+.embedded .masthead{top:8px;left:18px;right:18px;justify-content:flex-end}
+.embedded .masthead .text-button{font-size:10px}
+.embedded .control-dock{left:50%;bottom:22px}
+.embedded .scene-note{left:50%;bottom:90px;font-size:7px;letter-spacing:.08em}
+.embedded .fallback-inner{margin-top:5vh}
