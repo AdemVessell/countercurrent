@@ -1,5 +1,5 @@
 {
-  "createdAt": "2026-09-06T14:56:54.109424+00:00",
+  "createdAt": "2026-09-06T15:06:05.045136+00:00",
   "version": "0.1.0",
   "scope": "Curated standalone public release. Manifest excludes itself. No private workshop files, raw capture directory, build output or installed dependencies. Byte hashes identify content, not authorship or physical validity.",
   "files": [
@@ -40,13 +40,13 @@
     },
     {
       "path": "PROOF.md",
-      "bytes": 6326,
-      "sha256": "86914157a1fb12dd32116fa9c762afd876ba9de66d4407ec80b69889e45b1e7e"
+      "bytes": 6705,
+      "sha256": "7bbb09352637b85585a00647f25310d007c7400e5559d8ce648f64db19b14f93"
     },
     {
       "path": "README.md",
-      "bytes": 5385,
-      "sha256": "0d22d3fc39b1bcda43f4bf444ef0eb8270e3715e03ff4634abff6e9ea400621f"
+      "bytes": 5563,
+      "sha256": "a696e2109a64b0ad888a0463fcec790c7fddf71edf0fadb8dd1954001cf66d07"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -92,6 +92,11 @@
       "path": "evidence/DEVELOPMENT.md",
       "bytes": 2138,
       "sha256": "c7f36b74d16841cbf2701717e7d31ff24a3a4fa5d4e5ef7a41a075db5b021772"
+    },
+    {
+      "path": "evidence/EMBED_CHECK.json",
+      "bytes": 1514,
+      "sha256": "00810dd187bbbb09f92512f60f6b90954218e5eec97578cefc0c238c71a5c9bf"
     },
     {
       "path": "evidence/GPU_COMPARISON.json",
@@ -145,8 +150,8 @@
     },
     {
       "path": "src/main.js",
-      "bytes": 10880,
-      "sha256": "68e92b50b60de7794586244f078bef490a4804eb6d2c1d3d9329ede0202e0f5b"
+      "bytes": 10954,
+      "sha256": "565930b6b6081ae2e71b43958808ead2e159629db733e14e3dd2d666809187f5"
     },
     {
       "path": "src/physics/gpu.js",
@@ -160,13 +165,13 @@
     },
     {
       "path": "src/scene.js",
-      "bytes": 9089,
-      "sha256": "2390965b287220d38264a870d366c571b6217d0bcf2e191e59cf320cdff14a15"
+      "bytes": 9290,
+      "sha256": "dfb1e6a3c95d0ca54895553426220e06b4f1317558dc31395427de0b2ae3b835"
     },
     {
       "path": "src/style.css",
-      "bytes": 4373,
-      "sha256": "e362bc4d86211f2d822ebf2a7fb9389516499d763a5f83f93f511537edbeec38"
+      "bytes": 4738,
+      "sha256": "8c3c7b86cd128ab30622139edab3068cda709e772d2c1b6f59962bd60c58034f"
     },
     {
       "path": "src/ui.css",
@@ -179,5 +184,5 @@
       "sha256": "18ebf2743aeba1ddd8554bc443dec4e41be64283200ce2ff4bd674ae313fcbc2"
     }
   ],
-  "revision": "Copy refresh on main; the v0.1.0 tag and release archive remain unchanged."
+  "revision": "Live embed and plain copy on main. Original v0.1.0 tag/archive retained."
 }

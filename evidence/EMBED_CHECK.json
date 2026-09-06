@@ -1,0 +1,49 @@
+{
+  "scope": "Compact live embed on the ARSENAL page; local production browser check. This is interaction/layout evidence, not new physical validation.",
+  "change": "Adds ?embed layout and camera framing. Uses the same simulation, controls and input handlers as the full page. No video is used inside the live frame.",
+  "bundle": "index-CZ7EIJ6h.js",
+  "stylesheet": "index-Ch51EkT8.css",
+  "build": true,
+  "runtimeAudit": true,
+  "checks": {
+    "desktop": {
+      "ready": true,
+      "center": {
+        "x": 0.8490134800110897,
+        "z": 0.37724097057118783
+      },
+      "diagnostics": {
+        "steps": 14413,
+        "time": 60.05416666666667,
+        "z": -0.0691312626004219,
+        "speed": 0.048425570130348206,
+        "meanHeight": -0.023207362549768826,
+        "q": -0.04592390005065308,
+        "volume": 6.283153997088675e-10,
+        "maxHeight": 0.04270307719707489,
+        "finite": true,
+        "waterKinetic": 4.052193903109583,
+        "waterPotential": 4.906510532288119,
+        "bodyKinetic": 0.03283050179428981,
+        "couplingPotential": 1.8981041362761366,
+        "energy": 10.88963907346813,
+        "modifiedEnergy": 10.896094348708099
+      },
+      "embedded": true,
+      "introHidden": true
+    },
+    "mobile": {
+      "width": 344,
+      "height": 418,
+      "controls": {
+        "left": 17.86328125,
+        "right": 326.13671875,
+        "top": 341,
+        "bottom": 396
+      },
+      "ready": true
+    },
+    "inspector": true,
+    "overflow": false
+  }
+}

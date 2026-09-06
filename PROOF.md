@@ -12,6 +12,8 @@ The shipped inspector independently reruns three 24² cases on the viewer's devi
 
 ## Browser evidence
 
+The current ARSENAL page embeds the running app using `?embed`. `evidence/EMBED_CHECK.json` records the compact layout check: desktop pointer drag, mobile press, visible controls and working inspection. Only framing and presentation differ from the full page; the solver and input paths are shared. The initial v0.1.0 release evidence below remains tied to its recorded bundle.
+
 The 1440×1000 production build was exercised in desktop Chrome with WebGPU. A trusted pointer drag moved the guide to approximately (1.10, 0.70) m, released the hand, and produced finite waves. Pause held the step count at 512; resume advanced it to 596. The same press path produced zero water height with coupling off and approximately 11.84 mm maximum height with coupling on. After 7,200 additional fixed steps without resetting, energy fell from approximately 1.997 J to 0.000279 J and the state stayed finite.
 
 The production entry loaded one bundled JavaScript file and one stylesheet, both from localhost. The static runtime audit found no first-party external asset or network API. An offline-after-load press advanced the simulation and stayed finite. The unsupported route kept simulation controls disabled and model notes accessible. A 390×844 layout retained its controls, and reduced-motion preference left an untouched basin exactly at rest. The local five-second desktop sample rendered 600 frames at pixel ratio 1, with zero dropped wall time; this is one observed configuration, not a cross-device guarantee.

@@ -30,6 +30,8 @@ npm run preview
 
 The production output is `dist/`, with relative asset paths for subdirectory hosting. `npm run preview` serves it at `http://127.0.0.1:4188/`. This repository does not include `node_modules` or built bundles. Plain `file://` is not a supported launch method.
 
+Append `?embed` for the compact live layout used on the ARSENAL page. It keeps drag, press, reset, pause, coupling and inspection controls, with the same simulation underneath.
+
 ## Try the experiment
 
 - Hold inside the basin and move gently. Release to stop applying hand force.
